@@ -1,0 +1,5 @@
+requests>=2.25.1
+six>=1.15.0
+typing>=3.7.4.3
+huawei-modem-api-client>=1.1.5
+python-dotenv>=1.0.1
