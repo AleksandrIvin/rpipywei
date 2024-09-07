@@ -1,6 +1,30 @@
 # rpipywei
 
-##Create .env file with congiguration:
+The simple script which checks the internet connection requesting the list of urls.
+If the connection is lost, the script reboots HUAWEI router.
+You can install it to Raspberry Pi computer.
+
+
+## Clone the repository
+
+```
+git clone git@github.com:AleksandrIvin/rpipywei.git
+cd rpipywei
+```
+
+## Create the virtual environment
+
+```
+python -m venv .venv
+```
+
+## Instal the python packages
+
+```
+python -m pip install -r requirements.txt
+```
+
+## Create .env file with congiguration variables:
 
 ```
 USER=admin
@@ -12,7 +36,7 @@ REQUEST_TIMEOUT=30
 REQUEST_SLEEP=60
 ```
 
-##Setup your cron job
+## Setup your cron job
 
 `crontab -e`
 
