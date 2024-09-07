@@ -27,8 +27,8 @@ python -m pip install -r requirements.txt
 ## Create .env file with congiguration variables:
 
 ```
-USER=admin
-PASSWORD=admin
+HW_LOGIN=admin
+HW_PASSWORD=admin
 
 REQUEST_URLS=https://worldtimeapi.org/api/timezone/Europe/Warsaw.txt,https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41
 REQUEST_LIMIT=3

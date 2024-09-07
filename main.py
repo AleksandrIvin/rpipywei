@@ -25,8 +25,8 @@ REQUEST_LIMIT = int(os.getenv("REQUEST_LIMIT", 5))
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", 30))
 REQUEST_SLEEP = int(os.getenv("REQUEST_SLEEP", 120))
 
-USER = str(os.getenv("USER", "admin"))
-PASSWORD = str(os.getenv("PASSWORD", "admin"))
+HW_LOGIN = str(os.getenv("HW_LOGIN", "admin"))
+HW_PASSWORD = str(os.getenv("HW_PASSWORD", "admin"))
 
 
 def make_request():
@@ -46,7 +46,7 @@ def make_request():
 
 
 def reboot_router():
-    router = Router(USER, PASSWORD)
+    router = Router(HW_LOGIN, HW_PASSWORD)
     devices = router.get_devices()
     info = router.get_info()
     status = router.get_status()
